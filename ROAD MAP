@@ -1,0 +1,137 @@
+ROAD MAP [09/12/2016]
+---------------------
+x Ajout autoload
+x Tout passer en anglais
+x Ajouter bower composent au chargement des CSS/JS
+x Pour le model de DB, ajouter un query builder
+x Pour le model de DB, Faire les liaisons entre les tables
+x Passer les requètes avec implode
+x Valider les routes
+
+ROAD MAP [10/12/2016]
+---------------------
+x Route par défault
+x Ajout des messages flash
+x Faire un form builder
+x Validation au niveau du model
+
+ROAD MAP [11/12/2016]
+---------------------
+x Correction routers et retour d'erreur comme il faut
+x Valider les arguments
+x Revoir le message de debug
+
+ROAD MAP [12/12/2016]
+---------------------
+x Gérer les menus du site
+x Gérér les médias
+x Changer cokpit -> cockpit
+
+ROAD MAP [15/12/2016]
+---------------------
+x Créé une classe de component
+x Créer les actions en bdd via la ligne de commande
+x Documenté les classes du namespace system
+x Attention dans la fonction findById, on ne vérifie pas s'il y a une row retourné.
+x Revoir le parseur d'url pour checker que le prefix correspond bien à celui de la config
+
+ROAD MAP [20/12/2016]
+---------------------
+x Ajouter des callback au niveau des controllers et des models (before et after)
+
+ROAD MAP [17/03/2017]
+---------------------
+x Passer le fichier de function ailleurs => Dans Core\Controller ? Il me semble que tout dérive de là
+
+ROAD MAP [01/04/2017]
+---------------------
+x Commenter tous les codes qui sont inutiliser (passer tout çà dans les fonctions créé) exemple: helper title et articles listing
+x Dans les templates, utiliser les functions et non les variables static, c'est moche, et çà alourdi le code
+x Changer le routeur car auth_auth_login, c'est pas terrible
+x Trouver une solution pour $this->connectedUser, si on change la table user, on est mort => En config on va mettre le nom du Model et on se servira de çà pour faire le nom du connectedUser
+x Voir pour les models si on peut les loader avec juste un id et çà retourne l'objet ?
+x Mode debbug avec des log qui s'affiche qu'en debug
+x Déplacer Templator dans Core, les helpter je pense que c'est juste des modules, mais le coeur du templator serait mieux dans core
+x Dans signup est-ce qu'il y a des risques de pas être dans app ?
+
+ROAD MAP [02/04/2017]
+---------------------
+- Gestion de la config via l'administration
+- Page de gestion des comptes avec la photo (avatar)
+
+ROAD MAP [02/04/2017]
+---------------------
+- Est ce qu'on modfidier les champs après ? via migration
+x System de widget à mettre en place
+x Les modules besoin d'une config par module
+
+ROAD MAP [11/04/2017]
+---------------------
+- Function filter sur les champs de type firstname lastname
+- PB avec les bouton up et down dans les tableaux
+x Modifier le getOptions car il ne faut afficher l'objet qu'on est entrain de modifier dans la liste
+x  il faut aussi virer les enfants ou un truc comme çà sinon on va avoir aussi des boucle infini
+
+ROAD MAP [12/04/2017]
+---------------------
+x Pour les média ajouter des médias externe
+- Rajouter les boutons supression dans show et edit
+- Vérification des droits en écriture (Dans le cockpit)
+x Afficher les média en vignette
+
+ROAD MAP [22/04/2017]
+---------------------
+- Changer le nom de la table: galleries_medias => galleriesmedias
+- Changer name par label
+x Ajouter une root_path
+- Modifier les noms des variables titlePage => pageTitle (On part de l'objet)
+x Faire des raccourcit pour session et config que pour url. En gros trouver un moyen d'appeler les objects sans mettre le chemin complet ni faire les use
+x Modifier les $params['articles'] par $artciles directement
+- Pour les associations, il faudrait setAss et Get pour créer l'association
+- Quand il y a une erreur dans les requetes, renvoyer la requete assossié
+- Modifier le champs de selection des médias pour voir l'image s'il y en a une ajouté
+
+ROAD MAP [24/04/2017]
+---------------------
+- Slug pour les articles et les produits et les pages
+
+ROAD MAP [07/05/2017]
+---------------------
+- Rendre dynamique le choix du logo dans la config
+
+ROAD MAP [26/05/2017]
+---------------------
+- Mettre en place le système de role
+- Rendre un peu plus modulaire le framework
+- Revoir le système d'erreur
+- Différencier la partie membre et cockpit
+x Ajouter un bouton d'enregistrement au niveau de la box de modif des pages
+- Ajouter le système de modification du content au articles
+x Pages "/Routes" qui renvoye la liste de toutes les routes sur le layout d'erreur
+x Faire le système de fallback des Models / Controllers
+- Ajouter les formtages du text avec les boutons
+- Mettre un voile rouge pour supprimer les blocks
+- Supprimer les images et les afficher à coté du champs input file
+- Ajouter les boucles foreach dans les helpers
+- Ajouter l'affichage du help de la ligne de commande pour connaitre toutes les commandes possibles
+x Il faut mettre ailleurs les containers ou ajouter un champs à la section
+x Générer les images au bon format
+- Multi delete
+
+ROAD MAP [02/06/2017]
+---------------------
+- Rester connecté
+
+ROAD MAP [03/06/2017]
+---------------------
+- Ajouter un mod debug
+- Set flash à mettre ailleurs que dans session trop dépendant de Bootstrap
+
+ROAD MAP [04/06/2017]
+---------------------
+- Renvoyer les mot de passe et login aux utilisateurs par un bouton
+
+ROAD MAP [14/11/2019]
+---------------------
+- Modifier les choix des modules
+- Faire les vidéos de formation
